@@ -47,12 +47,12 @@ class build():
         # HTTP Bearer authentication. This will protect the API instance against
         # unauthorized access and CSRF attacks. It is strongly recommended to set this
         # to a secure value.
-        api_token = DGC3sBrPgVvOud3voKCong
+        api_token = xxxx
         """
 
         REST_URL = "http://localhost:8090/tasks/create/file"
         SAMPLE_FILE = self.file
-        HEADERS = {"Authorization" : "Bearer DGC3sBrPgVvOud3voKCong"}
+        HEADERS = {"Authorization" : "Bearer xxxx"}
 
         with open(SAMPLE_FILE, "rb") as sample:
             files = {"file": ("temp_file_name", sample)}
