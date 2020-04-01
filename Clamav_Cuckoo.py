@@ -28,12 +28,12 @@ class build():
 
         result = cd.scan(self.file)
         print(result)
-        #if (result[self.file][0] == "OK"):
+        if (result[self.file][0] == "OK"):
             # direct to cuckoo
-            #run_cuckoo(self)
-        #else:
+            self.run_cuckoo()
+        else:
             # file clean
-            #return 
+            print("File ok") 
 
     def run_cuckoo(self):
         # By default it will bind the service on localhost:8090
@@ -66,7 +66,7 @@ class build():
 def main():
     buildproject = build()
     buildproject.run_clamd()
-    buildproject.run_cuckoo()
+    #buildproject.run_cuckoo()
 
 if __name__ == '__main__':
     main()
